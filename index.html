@@ -34,6 +34,56 @@ section{padding:105px 0}.head{text-align:center;max-width:720px;margin:0 auto 52
 footer{border-top:1px solid var(--line);padding:30px 0;color:#8294a3;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.green-text{color:var(--green)}
 @media(max-width:950px){.hero-grid,.feature{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.visual{max-width:650px;margin:auto}.float{right:-5px}.pricing{display:block}.pricing .btn{margin-top:15px}}
 @media(max-width:600px){nav{top:8px}.links{display:none}.hero{padding-top:125px}.services,.steps,.feature-list{grid-template-columns:1fr}.hero-copy{font-size:16px}h1{letter-spacing:-2px}.window{transform:none}.float{position:relative;right:auto;bottom:auto;margin:12px auto 0;width:max-content}.pricing{padding:30px 23px}.pricing h2{font-size:29px}.cta{padding:55px 20px}}
+/* Mobile-first enhancement */
+@media (max-width:600px){
+  .wrap{width:calc(100% - 28px)}
+  nav{top:8px;width:calc(100% - 16px);border-radius:14px}
+  .nav{height:60px;padding:0 10px}
+  .logo{font-size:18px;letter-spacing:1.5px}
+  .nav .btn{padding:10px 12px;font-size:11px}
+  .links{display:none}
+  .hero{min-height:auto;padding:118px 0 55px}
+  .hero-grid{display:flex;flex-direction:column;gap:38px}
+  h1{font-size:clamp(42px,13vw,58px);line-height:.96;letter-spacing:-2.5px}
+  .hero-copy{font-size:15px;line-height:1.7}
+  .actions{flex-direction:column;width:100%;gap:10px}
+  .actions .btn{width:100%;min-height:48px}
+  .micro{display:grid;grid-template-columns:1fr;gap:10px}
+  .micro div{padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:#ffffff05}
+  .visual{width:100%;max-width:100%}
+  .window{width:100%;padding:7px;border-radius:18px;transform:none}
+  .site{padding:15px;border-radius:12px}
+  .site-nav{font-size:8px;gap:7px}
+  .site-hero{margin-top:17px;padding:20px 16px;border-radius:13px}
+  .site-hero h3{font-size:22px}
+  .tiles{gap:6px}.tile{height:48px;border-radius:7px}
+  .float{right:7px;bottom:-18px;padding:9px 11px;border-radius:10px}
+  .float b{font-size:11px}.float small{font-size:8px}
+  section{padding:68px 0}
+  .head{margin-bottom:30px}.head h2{font-size:34px;letter-spacing:-1px}.head p{font-size:14px}
+  .services{grid-template-columns:1fr;gap:12px}
+  .card{min-height:0;padding:21px;border-radius:16px}
+  .card h3{font-size:19px}.card p,.card li{font-size:13px}
+  .feature{display:flex;flex-direction:column;gap:30px}
+  .feature h2{font-size:35px;letter-spacing:-1px}
+  .feature-list{grid-template-columns:1fr;width:100%;gap:9px}
+  .feature-list div{padding:15px;border-radius:13px}
+  .pricing{padding:28px 20px;border-radius:20px;display:block}
+  .pricing h2{font-size:29px}.pricing p{font-size:13px}
+  .pricing .btn{width:100%;margin-top:18px}
+  .steps{grid-template-columns:1fr;gap:10px}
+  .step{padding:20px;border-radius:14px}
+  .cta{padding:48px 18px;border-radius:22px}
+  .cta h2{font-size:38px;letter-spacing:-1.2px}.cta p{font-size:14px}
+  .contact-note{font-size:10px;line-height:1.8}
+  .foot{flex-direction:column;text-align:center;gap:8px}
+}
+@media(max-width:380px){
+  .wrap{width:calc(100% - 22px)}
+  h1{font-size:40px}.hero-copy{font-size:14px}
+  .head h2,.feature h2{font-size:30px}.cta h2{font-size:33px}
+}
+
 </style>
 </head>
 <body>
