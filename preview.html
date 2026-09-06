@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DIGISERVE — Build Your Digital Future</title>
+<meta name="description" content="DIGISERVE builds modern websites, e-commerce stores, landing pages and custom web applications with affordable pricing and ready-to-launch delivery.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#050b12;--panel:#0b1622;--panel2:#0e1d2b;--text:#f5f8fa;--muted:#9caebb;--green:#2bea79;--gold:#d9b86c;--line:rgba(255,255,255,.1);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 15%,rgba(43,234,121,.08),transparent 28%),radial-gradient(circle at 90% 35%,rgba(217,184,108,.07),transparent 25%)}
+a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),92%);margin:auto}
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(1120px,92%);z-index:20;background:rgba(7,15,24,.72);border:1px solid var(--line);backdrop-filter:blur(18px);border-radius:18px}
+.nav{height:66px;padding:0 16px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:900;letter-spacing:2px}.logo i{font-style:normal;color:var(--green)}
+.links{display:flex;gap:26px;color:#b8c6d0;font-size:13px;font-weight:600}.links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:12px;font-size:13px;font-weight:800;transition:.25s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--green);color:#03140a;box-shadow:0 10px 35px rgba(43,234,121,.16)}.ghost{border:1px solid var(--line);background:#ffffff06}
+.hero{min-height:850px;padding:175px 0 100px;position:relative}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:65px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(43,234,121,.28);background:rgba(43,234,121,.07);color:#a7f6c5;border-radius:999px;padding:7px 12px;font-size:11px;font-weight:800;letter-spacing:1px}
+h1{font-size:clamp(48px,6.2vw,82px);line-height:.99;letter-spacing:-3px;margin:22px 0 20px}h1 span{color:var(--green)}.hero-copy{font-size:18px;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.micro{display:flex;gap:25px;flex-wrap:wrap;margin-top:34px}.micro div{font-size:12px;color:var(--muted)}.micro b{display:block;color:white;font-size:17px}
+.visual{position:relative}.orb{position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(43,234,121,.17),transparent 67%);filter:blur(4px);top:-70px;right:-50px}
+.window{position:relative;border:1px solid rgba(255,255,255,.14);border-radius:26px;background:linear-gradient(145deg,#122436,#07111c);padding:11px;box-shadow:0 40px 100px #0009;transform:rotate(1.5deg)}
+.topbar{height:35px;display:flex;align-items:center;gap:6px;padding:0 8px}.dot{width:8px;height:8px;border-radius:50%;background:#647789}
+.site{background:#f4f7f5;border-radius:17px;overflow:hidden;color:#0b1a29;padding:27px}.site-nav{display:flex;justify-content:space-between;font-size:11px;font-weight:800}.site-hero{margin-top:28px;border-radius:18px;padding:28px;background:linear-gradient(135deg,#0b2033,#157344);color:white}.site-hero small{opacity:.7}.site-hero h3{font-size:30px;line-height:1.08;margin:7px 0}.site-btn{display:inline-block;background:#2bea79;color:#06140b;padding:8px 12px;border-radius:8px;font-size:10px;font-weight:800}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px}.tile{height:70px;border:1px solid #dfe7e2;border-radius:11px;background:white}
+.float{position:absolute;right:-25px;bottom:25px;background:#0b1825;border:1px solid rgba(43,234,121,.25);border-radius:15px;padding:15px 18px;box-shadow:0 20px 45px #0008}.float b{color:var(--green);font-size:18px}.float small{display:block;color:var(--muted);font-size:10px}
+section{padding:105px 0}.head{text-align:center;max-width:720px;margin:0 auto 52px}.eyebrow{font-size:11px;color:var(--green);font-weight:900;letter-spacing:2px}.head h2{font-size:clamp(34px,4vw,52px);line-height:1.06;letter-spacing:-1.5px;margin:10px 0}.head p{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card{min-height:235px;padding:25px;border:1px solid var(--line);background:linear-gradient(145deg,#ffffff07,#ffffff02);border-radius:20px;transition:.3s;position:relative;overflow:hidden}.card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(43,234,121,.07);right:-60px;bottom:-60px}.card:hover{transform:translateY(-7px);border-color:rgba(43,234,121,.4);background:#ffffff09}.num{color:#566a7b;font-size:11px;font-weight:800}.icon{font-size:25px;color:var(--green);margin:15px 0 8px}.card h3{font-size:18px;margin:0 0 8px}.card p{color:var(--muted);font-size:13px;margin:0}.card ul{list-style:none;padding:0;margin:13px 0 0}.card li{color:#c2ced6;font-size:12px;padding:3px 0}.card li:before{content:"✓";color:var(--green);margin-right:7px;font-weight:900}
+.feature{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:center}.feature h2{font-size:clamp(34px,4vw,55px);line-height:1.05;margin:10px 0}.feature p{color:var(--muted)}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.feature-list div{padding:17px;border:1px solid var(--line);background:#ffffff06;border-radius:15px}.feature-list b{font-size:14px}.feature-list span{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+.pricing{padding:42px;border:1px solid rgba(43,234,121,.18);background:linear-gradient(120deg,#0b2a27,#0b1b29);border-radius:28px;display:flex;align-items:center;justify-content:space-between;gap:30px}.pricing h2{font-size:36px;line-height:1.1;margin:5px 0}.pricing p{color:#b9d7c6;max-width:700px}.label{color:var(--green);font-size:11px;font-weight:900;letter-spacing:2px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{padding:24px;background:#ffffff05;border:1px solid var(--line);border-radius:17px}.step strong{color:var(--green);font-size:11px}.step h3{margin:9px 0 4px}.step p{margin:0;color:var(--muted);font-size:13px}
+.cta{position:relative;overflow:hidden;background:#f2f6f4;color:#07131e;border-radius:30px;padding:72px 30px;text-align:center}.cta:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:#2bea7922;right:-100px;top:-120px}.cta h2{position:relative;font-size:clamp(38px,5vw,58px);line-height:1;margin:8px 0}.cta p{position:relative;color:#526270;max-width:680px;margin:0 auto}.cta .actions{justify-content:center;position:relative}
+.contact-note{margin-top:18px;font-size:12px;color:#60717e}.contact-note b{color:#183044}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#8294a3;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.green-text{color:var(--green)}
+@media(max-width:950px){.hero-grid,.feature{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.visual{max-width:650px;margin:auto}.float{right:-5px}.pricing{display:block}.pricing .btn{margin-top:15px}}
+@media(max-width:600px){nav{top:8px}.links{display:none}.hero{padding-top:125px}.services,.steps,.feature-list{grid-template-columns:1fr}.hero-copy{font-size:16px}h1{letter-spacing:-2px}.window{transform:none}.float{position:relative;right:auto;bottom:auto;margin:12px auto 0;width:max-content}.pricing{padding:30px 23px}.pricing h2{font-size:29px}.cta{padding:55px 20px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><a class="logo" href="#">DIGI<i>SERVE</i></a><div class="links"><a href="#services">Services</a><a href="#why">Why DIGISERVE</a><a href="#process">Process</a></div><a class="btn primary" href="https://wa.me/923355976655">Start a Project ↗</a></div></nav>
+
+<header class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="pill">✦ WEB DEVELOPMENT STUDIO</span>
+<h1>Your idea.<br>Your <span>website.</span><br>Your growth.</h1>
+<p class="hero-copy">We create modern, responsive and ready-to-launch websites for businesses, brands and startups — with solutions built around your requirements and budget.</p>
+<div class="actions"><a class="btn primary" href="https://wa.me/923355976655">Tell Us Your Idea →</a><a class="btn ghost" href="#services">Explore Services</a></div>
+<div class="micro"><div><b>✓ Affordable</b>Pricing built around your scope</div><div><b>✓ Ready to Launch</b>Deployment available</div><div><b>✓ Modern</b>Responsive experiences</div></div>
+</div>
+<div class="visual"><div class="orb"></div><div class="window"><div class="topbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="site"><div class="site-nav"><span>YOUR BUSINESS</span><span>HOME &nbsp; SERVICES &nbsp; CONTACT</span></div><div class="site-hero"><small>DIGITAL EXPERIENCE</small><h3>Make your business<br>look unforgettable.</h3><span class="site-btn">Get Started</span></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div></div><div class="float"><b>Ready to Launch ✓</b><small>Designed • Developed • Deployed</small></div></div>
+</div>
+</header>
+
+<section id="services"><div class="wrap"><div class="head"><div class="eyebrow">WHAT WE PROVIDE</div><h2>Everything you need to go online.</h2><p>From a focused landing page to a complete custom platform, choose a service or bring us your idea.</p></div>
+<div class="services">
+<div class="card"><span class="num">01</span><div class="icon">◫</div><h3>Business Websites</h3><p>Professional websites that build trust and showcase your business.</p><ul><li>Corporate / Company</li><li>Portfolio & Personal</li><li>Service Business</li></ul></div>
+<div class="card"><span class="num">02</span><div class="icon">🛒</div><h3>E-Commerce</h3><p>Modern online stores built around your products and customers.</p><ul><li>Online Store</li><li>Product Catalog</li><li>Payments & Orders</li></ul></div>
+<div class="card"><span class="num">03</span><div class="icon">▦</div><h3>Custom Web Apps</h3><p>Web-based systems designed for your unique workflow.</p><ul><li>Customer Portals</li><li>Dashboards</li><li>Booking & Management</li></ul></div>
+<div class="card"><span class="num">04</span><div class="icon">▤</div><h3>Landing Pages</h3><p>High-impact pages for products, campaigns and lead generation.</p><ul><li>Product Pages</li><li>Marketing Campaigns</li><li>Lead Generation</li></ul></div>
+<div class="card"><span class="num">05</span><div class="icon">✦</div><h3>Website Redesign</h3><p>Transform an outdated website into a modern experience.</p><ul><li>UI Redesign</li><li>Mobile Responsive</li><li>Performance Improvements</li></ul></div>
+<div class="card"><span class="num">06</span><div class="icon">&lt;/&gt;</div><h3>Advanced Development</h3><p>Connect your website with the tools and systems you need.</p><ul><li>API Integration</li><li>Automation</li><li>Database & Custom Features</li></ul></div>
+<div class="card"><span class="num">07</span><div class="icon">🚀</div><h3>Deployment & Launch</h3><p>We can take your completed project live and ready for customers.</p><ul><li>Deployment</li><li>Domain / Hosting Setup</li><li>Production Configuration</li></ul></div>
+<div class="card"><span class="num">08</span><div class="icon">◉</div><h3>Website Support</h3><p>Keep your website secure, updated and working smoothly.</p><ul><li>Maintenance</li><li>Bug Fixing</li><li>Technical Support</li></ul></div>
+</div></div></section>
+
+<section id="why"><div class="wrap feature"><div><div class="eyebrow">WHY DIGISERVE</div><h2>Not just a website. A digital experience.</h2><p>We focus on clean design, usability and practical business goals. Every project starts with understanding what you actually need.</p><div class="actions"><a class="btn primary" href="https://wa.me/923355976655">Discuss Your Project →</a></div></div>
+<div class="feature-list"><div><b>🎯 Requirement First</b><span>We understand your idea before development.</span></div><div><b>⚡ Modern Technology</b><span>Responsive and performance-focused builds.</span></div><div><b>💰 Affordable Pricing</b><span>Budget discussed according to project scope.</span></div><div><b>🚀 Ready to Launch</b><span>Deployment and launch support available.</span></div><div><b>📱 Mobile Ready</b><span>Designed to work across modern devices.</span></div><div><b>🛠️ After-Launch Support</b><span>Maintenance and technical support available.</span></div></div></div></section>
+
+<section><div class="wrap"><div class="pricing"><div><div class="label">NO ONE-SIZE-FITS-ALL PRICING</div><h2>Affordable pricing. Custom scope.</h2><p>Tell us what you want to build and your preferred budget. We'll discuss the requirements, recommend the right approach and agree on the scope before development begins.</p></div><a class="btn primary" href="https://wa.me/923355976655">Discuss Budget →</a></div></div></section>
+
+<section id="process"><div class="wrap"><div class="head"><div class="eyebrow">HOW IT WORKS</div><h2>Idea to live website.</h2><p>A simple process with clear communication.</p></div><div class="steps"><div class="step"><strong>01 — SHARE</strong><h3>Tell Us</h3><p>Share your idea, business and required features.</p></div><div class="step"><strong>02 — DISCUSS</strong><h3>Plan & Quote</h3><p>We understand the scope and discuss the budget.</p></div><div class="step"><strong>03 — BUILD</strong><h3>Develop</h3><p>We design and develop your approved project.</p></div><div class="step"><strong>04 — LAUNCH</strong><h3>Go Live</h3><p>Deploy your website and get ready for customers.</p></div></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta"><div class="eyebrow">HAVE AN IDEA?</div><h2>Let's build something great.</h2><p>Whether you need a simple business website or a custom web application, start with a conversation.</p><div class="actions"><a class="btn primary" href="https://wa.me/923355976655">MD Mehboob · WhatsApp</a><a class="btn ghost" href="https://wa.me/923104993336">Malik Saqib · WhatsApp</a></div><div class="contact-note">MD Mehboob: <b>+92 335 5976655</b> &nbsp; • &nbsp; Malik Saqib: <b>+92 310 4993336</b></div></div></div></section>
+
+<footer><div class="wrap foot"><span>© 2026 DIGISERVE — Web Development</span><span class="green-text">Everything Digital. All in One Place.</span></div></footer>
+</body></html>
